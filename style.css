@@ -39,7 +39,7 @@ div {
 }
 .e22 {
     color: gold;
-    margin-bottom: -35px;
+    margin-bottom: -30px;
     opacity: 0;
     animation: fade 1.5s 1.5s forwards;
 }
@@ -80,39 +80,3 @@ div {
         color: #4267B2;
     }
 }
-@-webkit-keyframes goApart {
-    from {
-        margin-inline: -91px;
-    }
-    to {
-        margin-inline: 0;
-    }
-}
-@-webkit-keyframes w1 {
-    to {
-        margin-top: -35px;
-        transform: rotate(35deg);
-        margin-right: -5px;
-    }
-}
-@-webkit-keyframes w2 {
-    to {
-        margin-top: -35px;
-        transform: rotate(-35deg);
-    }
-}
-@-webkit-keyframes fade {
-    to {
-        opacity: 1;
-    }
-}
-@-webkit-keyframes colorGrad {
-    33% {
-        color: #ccc379;
-    }
-    66% {
-        color: gold;
-    }
-    100% {
-        color: #4267B2;
-    }
