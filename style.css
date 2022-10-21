@@ -1,0 +1,81 @@
+body {
+    background-color: #1a1d1d;
+}
+div {
+    font-size: 4.5rem;
+    text-align: center;
+}
+.text {
+    opacity: 0;
+    animation: fade 1s 2s forwards;
+}
+.ww22 {
+    font-size: 3rem;
+    color: rgb(211, 211, 211);
+}
+.logo {
+    user-select: none;
+}
+.we-shall span {
+    color: #4267B2;
+    animation: colorGrad 5s 1s infinite;
+    animation-delay: calc(0.15s * var(--i));
+}
+.w1, .w2, .e22 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10rem;
+    display: inline-block;
+}
+.w1 {
+    color: #4267B2;
+    animation: w1 1s 0.5s forwards, goApart 1s 0.3s forwards;
+    margin-inline: -91px;
+}
+.w2 {
+    color: #ccc379;
+    animation: w2 1s 0.5s forwards, goApart 1s 0.3s forwards;
+    margin-inline: -91px;
+}
+.e22 {
+    color: gold;
+    margin-bottom: -35px;
+    opacity: 0;
+    animation: fade 1.5s 1.5s forwards;
+}
+@keyframes goApart {
+    from {
+        margin-inline: -91px;
+    }
+    to {
+        margin-inline: 0;
+    }
+}
+@keyframes w1 {
+    to {
+        margin-top: -35px;
+        transform: rotate(35deg);
+        margin-right: -5px;
+    }
+}
+@keyframes w2 {
+    to {
+        margin-top: -35px;
+        transform: rotate(-35deg);
+    }
+}
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes colorGrad {
+    33% {
+        color: #ccc379;
+    }
+    66% {
+        color: gold;
+    }
+    100% {
+        color: #4267B2;
+    }
+}
